@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="air-controller" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\tyrin\\Documents\\Visual\ Studio\ 2015\\Projects\\AirControllerWebService\\AirControllerWebService\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\tyrin\\Documents\\Visual\ Studio\ 2015\\Projects\\AirControllerWebService\\AirControllerWebService\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="AirControllerDB-Web.config Connection String" description="" value="Server=tcp:myserverdatabase.database.windows.net,1433;Database=aircontroller;User ID=proton@myserverdatabase;Password=9nch0wcfwzdjA;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\tyrin\\Documents\\Visual\ Studio\ 2015\\Projects\\AirControllerWebService\\AirControllerWebService\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='AirControllerDB']/@connectionString" />
+  </parameter>
+  <parameter name="StorageConnectionString-Web.config Connection String" description="StorageConnectionString Connection String used in web.config by the application to access the database." value="DefaultEndpointsProtocol=https;AccountName=aircontroller;AccountKey=UPkklFLy8Mz3MT9PDrMkAaBkNdD7Q4aMHBPLSxKIxXNWZwmXILcBmaEMYHGU4nTzuzmmCzinNe8bze8uKBM9+g==" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\tyrin\\Documents\\Visual\ Studio\ 2015\\Projects\\AirControllerWebService\\AirControllerWebService\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='StorageConnectionString']/@connectionString" />
+  </parameter>
+</parameters>
