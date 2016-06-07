@@ -826,7 +826,7 @@
             <summary>
                 Constructor
             </summary>
-            <param name="store">The IRoleStore is responsible for commiting changes via the UpdateAsync/CreateAsync methods</param>
+            <param name="store">The IRoleStore is responsible for committing changes via the UpdateAsync/CreateAsync methods</param>
         </member>
         <member name="M:Microsoft.AspNet.Identity.RoleManager`2.Dispose">
             <summary>
@@ -1783,7 +1783,7 @@
         </member>
         <member name="P:Microsoft.AspNet.Identity.Resources.DefaultError">
             <summary>
-              Looks up a localized string similar to An unknown failure has occured..
+              Looks up a localized string similar to An unknown failure has occurred..
             </summary>
         </member>
         <member name="P:Microsoft.AspNet.Identity.Resources.DuplicateEmail">
@@ -2083,7 +2083,7 @@
             <summary>
                 Constructor
             </summary>
-            <param name="store">The IUserStore is responsible for commiting changes via the UpdateAsync/CreateAsync methods</param>
+            <param name="store">The IUserStore is responsible for committing changes via the UpdateAsync/CreateAsync methods</param>
         </member>
         <member name="M:Microsoft.AspNet.Identity.UserManager`2.Dispose">
             <summary>

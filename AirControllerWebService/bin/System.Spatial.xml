@@ -2146,7 +2146,7 @@
         <member name="M:System.Spatial.ParseErrorException.#ctor(System.String,System.Exception)">
             <summary>Creates a new instance of the <see cref="T:System.Spatial.ParseErrorException" /> class from a message and previous exception.</summary>
             <param name="message">The message about the exception.</param>
-            <param name="innerException">The exception that preceeded this one.</param>
+            <param name="innerException">The exception that preceded this one.</param>
         </member>
         <member name="M:System.Spatial.ParseErrorException.#ctor(System.String)">
             <summary>Creates a new instance of the <see cref="T:System.Spatial.ParseErrorException" /> class from a message.</summary>
@@ -2177,7 +2177,7 @@
         </member>
         <member name="F:System.Spatial.SpatialPipeline.startingLink">
             <summary>
-            A reference to the begining link of the chain
+            A reference to the beginning link of the chain
             useful for getting the startingLink when creating the chain fluently
             e.g.  new ForwardingSegment(new Node()).ChainTo(new Node()).ChainTo(new Node).StartingLink
             </summary>
@@ -2549,7 +2549,7 @@
             </summary>
         </member>
         <member name="F:System.Spatial.GeographyPosition.latitude">
-            <summary>lattitude portion of position</summary>
+            <summary>latitude portion of position</summary>
         </member>
         <member name="F:System.Spatial.GeographyPosition.longitude">
             <summary>longitude portion of position</summary>
@@ -4608,7 +4608,7 @@
                 2- current element is named "element" but is an empty element - return false
                 3- current element is named "element" and is not empty - return true
             If the funciton returns true, it means that a non-empty element of the given name
-            was read, so the caller takes responsability to read the corresponding end element.
+            was read, so the caller takes responsibility to read the corresponding end element.
             </summary>
             <param name="element">The element name</param>
             <returns>Returns true if it read a non-empty start element of the given name.</returns>
@@ -5758,7 +5758,7 @@
         </member>
         <member name="M:Microsoft.Data.Spatial.ExtensionMethods.IfValidReturningNullable``2(``0,System.Func{``0,``1})">
             <summary>
-            If the arg is non-null, evaluate the op. Otherwise, propogate the null.
+            If the arg is non-null, evaluate the op. Otherwise, propagate the null.
             </summary>
             <typeparam name="TArg">The type of the arg.</typeparam>
             <typeparam name="TResult">The type of the result.</typeparam>
@@ -5768,7 +5768,7 @@
         </member>
         <member name="M:Microsoft.Data.Spatial.ExtensionMethods.IfValid``2(``0,System.Func{``0,``1})">
             <summary>
-            If the arg is non-null, evaluate the op. Otherwise, propogate the null.
+            If the arg is non-null, evaluate the op. Otherwise, propagate the null.
             </summary>
             <typeparam name="TArg">The type of the arg.</typeparam>
             <typeparam name="TResult">The type of the result.</typeparam>

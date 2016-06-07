@@ -327,7 +327,7 @@
         </member>
         <member name="F:System.Data.Services.Client.SimpleLazy`1.mutex">
             <summary>
-            For thread safty in creating the value.
+            For thread safety in creating the value.
             </summary>
         </member>
         <member name="F:System.Data.Services.Client.SimpleLazy`1.factory">
@@ -657,7 +657,7 @@
             </summary>
         </member>
         <member name="F:System.Data.Services.Client.LiteralFormatter.HexValues">
-            <summary>Constant table of nibble-to-hex convertion values.</summary>
+            <summary>Constant table of nibble-to-hex conversion values.</summary>
         </member>
         <member name="F:System.Data.Services.Client.LiteralFormatter.DefaultInstance">
             <summary>Default singleton instance for parenthetical keys, etags, or skiptokens.</summary>
@@ -3542,7 +3542,7 @@
         </member>
         <member name="T:System.Data.Services.Client.BatchSaveResult.CurrentOperationResponse">
             <summary>
-            Stores information about the currenly processed operation response.
+            Stores information about the currently processed operation response.
             </summary>
         </member>
         <member name="F:System.Data.Services.Client.BatchSaveResult.CurrentOperationResponse.statusCode">
@@ -4304,7 +4304,7 @@
             <summary>Entry being materialized; possibly null.</summary>
         </member>
         <member name="P:System.Data.Services.Client.Materialization.ODataMaterializer.NextLinkTable">
-            <summary>Table storing the next links assoicated with the current payload</summary>
+            <summary>Table storing the next links associated with the current payload</summary>
         </member>
         <member name="P:System.Data.Services.Client.Materialization.ODataMaterializer.IsEndOfStream">
             <summary>Whether we have finished processing the current data stream.</summary>
@@ -7283,7 +7283,7 @@
         </member>
         <member name="M:System.Data.Services.Client.QueryResult.ProcessResult``1(System.Data.Services.Client.ProjectionPlan)">
             <summary>
-            Processes the result for successfull request and produces the actual result of the request.
+            Processes the result for successful request and produces the actual result of the request.
             </summary>
             <typeparam name="TElement">Element type of the result.</typeparam>
             <param name="plan">The plan to use for the projection, if available in precompiled form.</param>
@@ -7959,7 +7959,7 @@
             This class will also detect cases in which the assignment
             expression refers to cases which we shouldn't handle during
             materialization, such as references to multiple entity types
-            as sources (or refering to no source at all).
+            as sources (or referring to no source at all).
             </remarks>
         </member>
         <member name="T:System.Data.Services.Client.ALinqExpressionVisitor">
@@ -8688,7 +8688,7 @@
         <member name="M:System.Data.Services.Client.ProjectionPathBuilder.EnterMemberInit(System.Linq.Expressions.MemberInitExpression)">
             <summary>
             Records that a member initialization expression has been entered 
-            when visting a projection.
+            when visiting a projection.
             </summary>
             <param name="init">Expression for initialization.</param>
         </member>
@@ -8698,12 +8698,12 @@
             <returns>A rewrite for the expression; possibly null.</returns>
         </member>
         <member name="M:System.Data.Services.Client.ProjectionPathBuilder.LeaveLambdaScope">
-            <summary>Records that a lambda scope has been left when visting a projection.</summary>
+            <summary>Records that a lambda scope has been left when visiting a projection.</summary>
         </member>
         <member name="M:System.Data.Services.Client.ProjectionPathBuilder.LeaveMemberInit">
             <summary>
             Records that a member initialization expression has been left when 
-            visting a projection.
+            visiting a projection.
             </summary>
         </member>
         <member name="M:System.Data.Services.Client.ProjectionPathBuilder.RegisterRewrite(System.Linq.Expressions.Expression,System.String[],System.Linq.Expressions.Expression)">
@@ -10725,7 +10725,7 @@
             <param name="clrType">The Clr Type</param>
             <param name="edmTypeName">The Edm Type Name</param>
             <param name="primitiveKind">The Edm Primitive Type Kind</param>
-            <param name="typeConverter">A PrimitiveXmlConverter that provides convertion between  instances of this type to its Xml representation and back</param>
+            <param name="typeConverter">A PrimitiveXmlConverter that provides conversion between  instances of this type to its Xml representation and back</param>
             <param name="hasReverseMapping">Whether this primitive type can be mapped from the Edm type name</param>
         </member>
         <member name="M:System.Data.Services.Client.PrimitiveType.TryGetPrimitiveType(System.Type,System.Data.Services.Client.PrimitiveType@)">
@@ -10824,7 +10824,7 @@
         </member>
         <member name="P:System.Data.Services.Client.PrimitiveType.TypeConverter">
             <summary>
-            A PrimitiveXmlConverter that provides convertion between 
+            A PrimitiveXmlConverter that provides conversion between 
             instances of this type to its Xml representation and back
             </summary>
         </member>
@@ -12345,7 +12345,7 @@
             <param name="navPropRef">The navigation property reference to analyze</param>
             <param name="context">Data service context instance</param>
             <param name="result">The resource set expression</param>
-            <returns>true if succesful, else false</returns>
+            <returns>true if successful, else false</returns>
         </member>
         <member name="M:System.Data.Services.Client.ResourceBinder.AnalyzeSelectManySelector(System.Linq.Expressions.MethodCallExpression,System.Data.Services.Client.ResourceSetExpression,System.Data.Services.Client.DataServiceContext)">
             <summary>
@@ -12464,7 +12464,7 @@
             
             - Return true/false for matches, and interesting matched information in out parameters.
             
-            - If one of the inputs to be matched undergoes "skipping" for unnecesary converts,
+            - If one of the inputs to be matched undergoes "skipping" for unnecessary converts,
               return the same member as an out parameter. This forces callers to be aware that
               they should use the more precise representation for computation (without having
               to rely on a normalization step).
@@ -13697,7 +13697,7 @@
             <summary>
             Visits operands for Binary and Unary expressions.
             Will only output parens if operand is complex expression,
-            this is so don't have unecessary parens in URI.
+            this is so don't have unnecessary parens in URI.
             </summary>
             <param name="e">The operand expression to visit</param>
         </member>
@@ -13705,7 +13705,7 @@
             <summary>
             Visits operands for Binary and Unary expressions.
             Will only output parens if operand is complex expression,
-            this is so don't have unecessary parens in URI.
+            this is so don't have unnecessary parens in URI.
             </summary>
             <param name="e">The operand expression to visit</param>
             <param name="parentType">The node type of the parent expression (if applicable)</param>
@@ -14020,7 +14020,7 @@
         </member>
         <member name="M:System.Data.Services.Client.ArraySet`1.#ctor(System.Int32)">
             <summary>
-            array set with an intial capacity
+            array set with an initial capacity
             </summary>
             <param name="capacity">initial capacity</param>
         </member>
@@ -14051,7 +14051,7 @@
         <member name="M:System.Data.Services.Client.ArraySet`1.IndexOf(`0,System.Func{`0,`0,System.Boolean})">
             <summary>Find the current index of element within the set</summary>
             <param name="item">item to find</param>
-            <param name="comparer">comparision function</param>
+            <param name="comparer">comparison function</param>
             <returns>index of the item else (-1)</returns>
         </member>
         <member name="M:System.Data.Services.Client.ArraySet`1.IndexOf``1(``0,System.Func{`0,``0},System.Func{``0,``0,System.Boolean})">
@@ -15381,7 +15381,7 @@
         <member name="F:System.Data.Services.Client.LoadCompletedEventArgs.queryOperationResponse">
             <summary>The <see cref="P:System.Data.Services.Client.LoadCompletedEventArgs.QueryOperationResponse"/> which represents
             the response for the Load operation.</summary>
-            <remarks>This field is non-null only when the Load operation was successfull.
+            <remarks>This field is non-null only when the Load operation was successful.
             Otherwise it's null.</remarks>
         </member>
         <member name="M:System.Data.Services.Client.LoadCompletedEventArgs.#ctor(System.Data.Services.Client.QueryOperationResponse,System.Exception)">
@@ -17910,7 +17910,7 @@
             </summary>
         </member>
         <member name="F:System.Data.Services.Client.StreamDescriptor.entityDescriptor">
-            <summary>entity descriptor refering the parent entity.</summary>
+            <summary>entity descriptor referring the parent entity.</summary>
         </member>
         <member name="F:System.Data.Services.Client.StreamDescriptor.transientNamedStreamInfo">
             <summary>
@@ -18145,7 +18145,7 @@
             <summary>The function provided by the user to resolve the baseUri of entity sets. can be null</summary>
         </member>
         <member name="F:System.Data.Services.Client.UriResolver.baseUriWithSlash">
-            <summary>base uri with guranteed trailing slash</summary>
+            <summary>base uri with guaranteed trailing slash</summary>
         </member>
         <member name="M:System.Data.Services.Client.UriResolver.#ctor(System.Uri,System.Func{System.String,System.Uri})">
             <summary>
@@ -19188,7 +19188,7 @@
             <param name="callback">The delegate to call when the operation is completed.</param>
             <param name="state">The user-defined state object that is used to pass context data to the callback method.</param>
             <remarks>
-            BeginSaveChanges will asynchronously attach identity Uri returned by server to sucessfully added entites.
+            BeginSaveChanges will asynchronously attach identity Uri returned by server to successfully added entites.
             EndSaveChanges will apply updated values to entities, raise ReadingEntity events and change entity states.
             </remarks>
         </member>
@@ -19547,7 +19547,7 @@
         </member>
         <member name="M:System.Data.Services.Client.DataServiceContext.ValidateOperationParameters(System.String,System.Data.Services.Client.OperationParameter[],System.Collections.Generic.List{System.Data.Services.Client.BodyOperationParameter}@,System.Collections.Generic.List{System.Data.Services.Client.UriOperationParameter}@)">
             <summary>
-            Validates a given list of operation parameter and returns two seperated list of body operation parameter
+            Validates a given list of operation parameter and returns two separated list of body operation parameter
             and uri operation parameter respectively.
             </summary>
             <param name="httpMethod">the http method used in the request. Only POST and GET http methods are supported with operation parameters.</param>
@@ -19575,8 +19575,8 @@
         </member>
         <member name="M:System.Data.Services.Client.DataServiceContext.ValidateExecuteParameters``1(System.Uri@,System.String,System.Nullable{System.Boolean}@,System.Collections.Generic.List{System.Data.Services.Client.BodyOperationParameter}@,System.Collections.Generic.List{System.Data.Services.Client.UriOperationParameter}@,System.Data.Services.Client.OperationParameter[])">
             <summary>
-            Validate and process the input parameters to all the execute methods. Also seperates and returns
-            the input operation parameters list into two seperate list - one of body operation parameters and the other 
+            Validate and process the input parameters to all the execute methods. Also separates and returns
+            the input operation parameters list into two separate list - one of body operation parameters and the other 
             for uri operation parameters.
             </summary>
             <typeparam name="TElement">element type. See Execute method for more details.</typeparam>

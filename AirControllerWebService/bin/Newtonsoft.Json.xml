@@ -2358,7 +2358,7 @@
             </summary>
             <typeparam name="T">
             The anonymous type to deserialize to. This can't be specified
-            traditionally and must be infered from the anonymous type passed
+            traditionally and must be inferred from the anonymous type passed
             as a parameter.
             </typeparam>
             <param name="value">The JSON to deserialize.</param>
@@ -2371,7 +2371,7 @@
             </summary>
             <typeparam name="T">
             The anonymous type to deserialize to. This can't be specified
-            traditionally and must be infered from the anonymous type passed
+            traditionally and must be inferred from the anonymous type passed
             as a parameter.
             </typeparam>
             <param name="value">The JSON to deserialize.</param>
@@ -6616,9 +6616,9 @@
         </member>
         <member name="P:Newtonsoft.Json.Linq.JTokenWriter.Token">
             <summary>
-            Gets the token being writen.
+            Gets the token being written.
             </summary>
-            <value>The token being writen.</value>
+            <value>The token being written.</value>
         </member>
         <member name="T:Newtonsoft.Json.Linq.MergeArrayHandling">
             <summary>

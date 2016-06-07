@@ -1098,7 +1098,7 @@
         </member>
         <member name="F:Microsoft.Data.Edm.Csdl.Internal.CsdlSemantics.CsdlSemanticsPrimitiveTypeReference.definition">
             <summary>
-            This doesn't need the full caching mechanism because the computation is cheap, and the likelyhood of computing a primitive type reference without needing its definition is remote.
+            This doesn't need the full caching mechanism because the computation is cheap, and the likelihood of computing a primitive type reference without needing its definition is remote.
             </summary>
         </member>
         <member name="T:Microsoft.Data.Edm.IEdmSpatialTypeReference">
@@ -1350,7 +1350,7 @@
         </member>
         <member name="T:Microsoft.Data.Edm.Csdl.EdmVocabularyAnnotationSerializationLocation">
             <summary>
-            Represents whether a vocabulary annotation should be serialized within the element it applies to or in a seperate section of the CSDL.
+            Represents whether a vocabulary annotation should be serialized within the element it applies to or in a separate section of the CSDL.
             </summary>
         </member>
         <member name="F:Microsoft.Data.Edm.Csdl.EdmVocabularyAnnotationSerializationLocation.Inline">
@@ -1360,7 +1360,7 @@
         </member>
         <member name="F:Microsoft.Data.Edm.Csdl.EdmVocabularyAnnotationSerializationLocation.OutOfLine">
             <summary>
-            The annotation should be serialized in a seperate section.
+            The annotation should be serialized in a separate section.
             </summary>
         </member>
         <member name="T:Microsoft.Data.Edm.Csdl.SerializationExtensionMethods">
@@ -1723,7 +1723,7 @@
             <param name="model">Model to be written.</param>
             <param name="writer">XmlWriter the generated EDMX will be written to.</param>
             <param name="target">Target implementation of the EDMX being generated.</param>
-            <param name="errors">Errors that prevented successful serialization, or no errors if serialization was successfull. </param>
+            <param name="errors">Errors that prevented successful serialization, or no errors if serialization was successful. </param>
             <returns>A value indicating whether serialization was successful.</returns>
         </member>
         <member name="T:Microsoft.Data.Edm.IEdmEntityReferenceTypeReference">
@@ -1825,7 +1825,7 @@
             <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Data.Edm.Library.Expressions.EdmPathExpression"/> class.
             </summary>
-            <param name="path">Path string containing segments seperated by '/'. For example: "A.B/C/D.E/Func1(NS.T,NS.T2)/P1".</param>
+            <param name="path">Path string containing segments separated by '/'. For example: "A.B/C/D.E/Func1(NS.T,NS.T2)/P1".</param>
         </member>
         <member name="M:Microsoft.Data.Edm.Library.Expressions.EdmPathExpression.#ctor(System.String[])">
             <summary>
@@ -2084,7 +2084,7 @@
         </member>
         <member name="T:Microsoft.Data.Edm.EdmToClrConversion.EdmToClrConverter.CastHelper">
             <summary>
-            The class contains method that are called thru reflection to produce values of correct CLR types.
+            The class contains method that are called through reflection to produce values of correct CLR types.
             For example if one has an int value and a clr type represnting an enum : int, there is no other way to convert the int
             to the enum type object.
             </summary>
@@ -2769,7 +2769,7 @@
             <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Data.Edm.Library.EdmEntityTypeReference"/> class.
             </summary>
-            <param name="entityType">The definition refered to by this reference.</param>
+            <param name="entityType">The definition referred to by this reference.</param>
             <param name="isNullable">Denotes whether the type can be nullable.</param>
         </member>
         <member name="T:Microsoft.Data.Edm.Library.Internal.BadEnumMember">
@@ -4587,7 +4587,7 @@
             <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Data.Edm.Library.EdmEnumTypeReference"/> class.
             </summary>
-            <param name="enumType">The definition refered to by this reference.</param>
+            <param name="enumType">The definition referred to by this reference.</param>
             <param name="isNullable">Denotes whether the type can be nullable.</param>
         </member>
         <member name="T:Microsoft.Data.Edm.Library.Expressions.EdmValueTermReferenceExpression">
@@ -8229,7 +8229,7 @@
             </summary>
             <param name="location">Location of the error.</param>
             <param name="errorCode">Value representing the error.</param>
-            <param name="errorMessage">Message text discribing the error.</param>
+            <param name="errorMessage">Message text describing the error.</param>
         </member>
         <member name="M:Microsoft.Data.Edm.Validation.ValidationContext.AddError(Microsoft.Data.Edm.Validation.EdmError)">
             <summary>
@@ -8341,7 +8341,7 @@
         </member>
         <member name="F:Microsoft.Data.Edm.Validation.ValidationRules.EntitySetCanOnlyBeContainedByASingleNavigationProperty">
             <summary>
-            Validates that an entity set can only have a single navigation property targetting it that has Contains set to true.
+            Validates that an entity set can only have a single navigation property targeting it that has Contains set to true.
             </summary>
         </member>
         <member name="F:Microsoft.Data.Edm.Validation.ValidationRules.EntitySetNavigationMappingMustBeBidirectional">
@@ -8569,14 +8569,14 @@
             <summary>
             Validates that if a navigation property has <see cref="P:Microsoft.Data.Edm.IEdmNavigationProperty.ContainsTarget"/> = true and the target entity type is the same as 
             the declaring type of the property, then the multiplicity of the target of navigation is 0..1 or Many.
-            This depends on there being a targetting cycle. Because of the rule <see cref="F:Microsoft.Data.Edm.Validation.ValidationRules.EntitySetNavigationMappingMustBeBidirectional"/>, we know that either this is always true, or there will be an error
+            This depends on there being a targeting cycle. Because of the rule <see cref="F:Microsoft.Data.Edm.Validation.ValidationRules.EntitySetNavigationMappingMustBeBidirectional"/>, we know that either this is always true, or there will be an error
             </summary>
         </member>
         <member name="F:Microsoft.Data.Edm.Validation.ValidationRules.NavigationPropertyWithRecursiveContainmentSourceMustBeFromZeroOrOne">
             <summary>
             Validates that if a navigation property has <see cref="P:Microsoft.Data.Edm.IEdmNavigationProperty.ContainsTarget"/> = true and the target entity type is the same as 
             the declaring type of the property, then the multiplicity of the source of navigation is Zero-Or-One.
-            This depends on there being a targetting cycle. Because of the rule <see cref="F:Microsoft.Data.Edm.Validation.ValidationRules.EntitySetNavigationMappingMustBeBidirectional"/>, we know that either this is always true, or there will be an error
+            This depends on there being a targeting cycle. Because of the rule <see cref="F:Microsoft.Data.Edm.Validation.ValidationRules.EntitySetNavigationMappingMustBeBidirectional"/>, we know that either this is always true, or there will be an error
             </summary>
         </member>
         <member name="F:Microsoft.Data.Edm.Validation.ValidationRules.NavigationPropertyWithNonRecursiveContainmentSourceMustBeFromOne">
@@ -9068,7 +9068,7 @@
         </member>
         <member name="F:Microsoft.Data.Edm.Validation.EdmErrorCode.InvalidOnDelete">
             <summary>
-            An error occured processing the OnDelete element
+            An error occurred processing the OnDelete element
             </summary>
         </member>
         <member name="F:Microsoft.Data.Edm.Validation.EdmErrorCode.BadUnresolvedComplexType">
@@ -9816,7 +9816,7 @@
         </member>
         <member name="F:Microsoft.Data.Edm.Validation.EdmErrorCode.TypeAnnotationHasExtraProperties">
             <summary>
-            Type annotation has a property binding for a non-existant property and its type is not open.
+            Type annotation has a property binding for a non-existent property and its type is not open.
             </summary>
         </member>
         <member name="F:Microsoft.Data.Edm.Validation.EdmErrorCode.InvalidTime">
