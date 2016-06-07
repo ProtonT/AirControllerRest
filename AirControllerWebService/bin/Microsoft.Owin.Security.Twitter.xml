@@ -79,7 +79,7 @@
         </member>
         <member name="P:Microsoft.Owin.Security.Twitter.Messages.Serializers.RequestToken">
             <summary>
-            Gets or sets a statically-avaliable serializer object. The value for this property will be <see cref="T:Microsoft.Owin.Security.Twitter.Messages.RequestTokenSerializer"/> by default.
+            Gets or sets a statically-available serializer object. The value for this property will be <see cref="T:Microsoft.Owin.Security.Twitter.Messages.RequestTokenSerializer"/> by default.
             </summary>
         </member>
         <member name="T:Microsoft.Owin.Security.Twitter.ITwitterAuthenticationProvider">
@@ -89,7 +89,7 @@
         </member>
         <member name="M:Microsoft.Owin.Security.Twitter.ITwitterAuthenticationProvider.Authenticated(Microsoft.Owin.Security.Twitter.TwitterAuthenticatedContext)">
             <summary>
-            Invoked whenever Twitter succesfully authenticates a user
+            Invoked whenever Twitter successfully authenticates a user
             </summary>
             <param name="context">Contains information about the login session as well as the user <see cref="T:System.Security.Claims.ClaimsIdentity"/>.</param>
             <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the completed operation.</returns>
@@ -188,7 +188,7 @@
         </member>
         <member name="M:Microsoft.Owin.Security.Twitter.TwitterAuthenticationProvider.Authenticated(Microsoft.Owin.Security.Twitter.TwitterAuthenticatedContext)">
             <summary>
-            Invoked whenever Twitter succesfully authenticates a user
+            Invoked whenever Twitter successfully authenticates a user
             </summary>
             <param name="context">Contains information about the login session as well as the user <see cref="T:System.Security.Claims.ClaimsIdentity"/>.</param>
             <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the completed operation.</returns>

@@ -10,7 +10,7 @@
             </summary>
         </member>
         <member name="F:Microsoft.Data.OData.Evaluation.LiteralFormatter.HexValues">
-            <summary>Constant table of nibble-to-hex convertion values.</summary>
+            <summary>Constant table of nibble-to-hex conversion values.</summary>
         </member>
         <member name="F:Microsoft.Data.OData.Evaluation.LiteralFormatter.DefaultInstance">
             <summary>Default singleton instance for parenthetical keys, etags, or skiptokens.</summary>
@@ -329,7 +329,7 @@
             <summary>
             Gets the url convention for the given user setting and type context.
             </summary>
-            <param name="keyAsSegment">true if keys should go in seperate segments in auto-generated URIs, false if they should go in parentheses.
+            <param name="keyAsSegment">true if keys should go in separate segments in auto-generated URIs, false if they should go in parentheses.
             A null value means the user hasn't specified a preference and we should look for an annotation in the entity container, if available.</param>
             <param name="typeContext">The type context for the entry or feed being written.</param>
             <returns>The convention to use when generating URLs.</returns>
@@ -915,7 +915,7 @@
         <member name="M:Microsoft.Data.OData.ODataAnnotatable.RemoveAnnotation``1">
             <summary>
             Remove the annotation of type T from the set of annotations (if such an annotation exists).
-            We only allow a single occurence of an annotation of type T.
+            We only allow a single occurrence of an annotation of type T.
             </summary>
             <typeparam name="T">The type of the annotation to remove.</typeparam>
         </member>
@@ -1882,14 +1882,14 @@
         </member>
         <member name="M:Microsoft.Data.OData.Query.ISelectExpandTermParser.ParseSingleSelectTerm(System.Boolean)">
             <summary>
-            Parses a single term in a comma seperated list of things to select.
+            Parses a single term in a comma separated list of things to select.
             </summary>
             <param name="isInnerTerm">is this an inner or outer select term</param>
             <returns>A token representing thing to select.</returns>
         </member>
         <member name="M:Microsoft.Data.OData.Query.ISelectExpandTermParser.ParseSingleExpandTerm(System.Boolean)">
             <summary>
-            Parses a single term in a comma seperated list of things to expand.
+            Parses a single term in a comma separated list of things to expand.
             </summary>
             <param name="isInnerTerm">is this an inner or outer term.</param>
             <returns>A token representing thing to expand.</returns>
@@ -1935,14 +1935,14 @@
         </member>
         <member name="M:Microsoft.Data.OData.Query.SelectExpandTermParser.ParseSingleSelectTerm(System.Boolean)">
             <summary>
-            Parses a single term in a comma seperated list of things to select.
+            Parses a single term in a comma separated list of things to select.
             </summary>
             <param name="isInnerTerm">is this an inner or outer select term</param>
             <returns>A token representing thing to select.</returns>
         </member>
         <member name="M:Microsoft.Data.OData.Query.SelectExpandTermParser.ParseSingleExpandTerm(System.Boolean)">
             <summary>
-            Parses a single term in a comma seperated list of things to expand.
+            Parses a single term in a comma separated list of things to expand.
             </summary>
             <param name="isInnerTerm">is this an inner or outer term.</param>
             <returns>A token representing thing to expand.</returns>
@@ -3016,7 +3016,7 @@
             Tries to remove formatting specific to this parser's expected type.
             </summary>
             <param name="text">The text to remove formatting from.</param>
-            <returns>Whether or not the expected formatting was found and succesfully removed.</returns>
+            <returns>Whether or not the expected formatting was found and successfully removed.</returns>
         </member>
         <member name="M:Microsoft.Data.OData.Query.LiteralParser.PrimitiveParser.ValueOfTypeCanContainQuotes(System.Type)">
             <summary>
@@ -3153,7 +3153,7 @@
             </summary>
             <param name="text">The text to remove formatting from.</param>
             <returns>
-            Whether or not the expected formatting was found and succesfully removed.
+            Whether or not the expected formatting was found and successfully removed.
             </returns>
         </member>
         <member name="M:Microsoft.Data.OData.Query.LiteralParser.BinaryPrimitiveParser.HexCharToNibble(System.Char)">
@@ -3188,7 +3188,7 @@
             </summary>
             <param name="text">The text to remove formatting from.</param>
             <returns>
-            Whether or not the expected formatting was found and succesfully removed.
+            Whether or not the expected formatting was found and successfully removed.
             </returns>
         </member>
         <member name="T:Microsoft.Data.OData.Query.MetadataBindingUtils">
@@ -3201,7 +3201,7 @@
             If the source node is not of the specified type, then we check if type promotion is possible and inject a convert node.
             If the source node is the same type as the target type (or if the target type is null), we just return the source node as is.
             </summary>
-            <param name="source">The source node to apply the convertion to.</param>
+            <param name="source">The source node to apply the conversion to.</param>
             <param name="targetTypeReference">The target primitive type. May be null - this method will do nothing in that case.</param>
             <returns>The converted query node, or the original source node unchanged.</returns>
         </member>
@@ -3811,10 +3811,10 @@
             <summary>Indicates whether this segment targets a single result or not.</summary>
         </member>
         <member name="F:Microsoft.Data.OData.Query.SemanticAst.ODataPathSegment.targetEdmEntitySet">
-            <summary>The entity set targetted by this segment. Can be null.</summary>
+            <summary>The entity set targeted by this segment. Can be null.</summary>
         </member>
         <member name="F:Microsoft.Data.OData.Query.SemanticAst.ODataPathSegment.targetEdmType">
-            <summary>The type targetted by this segment. Can be null.</summary>
+            <summary>The type targeted by this segment. Can be null.</summary>
         </member>
         <member name="F:Microsoft.Data.OData.Query.SemanticAst.ODataPathSegment.targetKind">
             <summary>The kind of resource targeted by this segment.</summary>
@@ -3870,10 +3870,10 @@
             <summary>Whether the segment targets a single result or not.</summary>
         </member>
         <member name="P:Microsoft.Data.OData.Query.SemanticAst.ODataPathSegment.TargetEdmEntitySet">
-            <summary>The entity set targetted by this segment. Can be null.</summary>
+            <summary>The entity set targeted by this segment. Can be null.</summary>
         </member>
         <member name="P:Microsoft.Data.OData.Query.SemanticAst.ODataPathSegment.TargetEdmType">
-            <summary>The type targetted by this segment. Can be null.</summary>
+            <summary>The type targeted by this segment. Can be null.</summary>
         </member>
         <member name="P:Microsoft.Data.OData.Query.SemanticAst.ODataPathSegment.TargetKind">
             <summary>The kind of resource targeted by this segment.</summary>
@@ -4635,7 +4635,7 @@
         </member>
         <member name="T:Microsoft.Data.OData.Query.RequestTargetKind">
             <summary>
-            Provides values to describe the kind of thing targetted by a 
+            Provides values to describe the kind of thing targeted by a 
             client request.
             </summary>
         </member>
@@ -4770,7 +4770,7 @@
         </member>
         <member name="M:Microsoft.Data.OData.Query.ODataPathParser.TryHandleAsKeySegment(System.String)">
             <summary>
-            Tries to handle the given text as a key if the URL conventions support it and it was not preceeded by an escape segment.
+            Tries to handle the given text as a key if the URL conventions support it and it was not preceded by an escape segment.
             </summary>
             <param name="segmentText">The text which might be a key.</param>
             <returns>Whether or not the text was handled as a key.</returns>
@@ -4983,7 +4983,7 @@
         </member>
         <member name="M:Microsoft.Data.OData.Query.SemanticAst.SelectExpandTreeFinisher.PruneSelectExpandTree(Microsoft.Data.OData.Query.SemanticAst.SelectExpandClause)">
             <summary>
-            Prune off any unneccessary expands
+            Prune off any unnecessary expands
             </summary>
             <param name="clauseToPrune">the clause to prune</param>
             <returns>a pruned tree.</returns>
@@ -5032,7 +5032,7 @@
             <summary>
             Visit a NonSystemToken
             </summary>
-            <param name="tokenIn">the non sytem token to visit</param>
+            <param name="tokenIn">the non system token to visit</param>
         </member>
         <member name="M:Microsoft.Data.OData.Query.SyntacticAst.SelectPropertyVisitor.ProcessTokenAsPath(Microsoft.Data.OData.Query.SyntacticAst.NonSystemToken)">
             <summary>
@@ -5094,7 +5094,7 @@
         </member>
         <member name="F:Microsoft.Data.OData.Query.SemanticAst.BatchReferenceSegment.contentId">
             <summary>
-            The contentId that this alias referrs to.
+            The contentId that this alias refers to.
             </summary>
         </member>
         <member name="M:Microsoft.Data.OData.Query.SemanticAst.BatchReferenceSegment.#ctor(System.String,Microsoft.Data.Edm.IEdmType,Microsoft.Data.Edm.IEdmEntitySet)">
@@ -5603,7 +5603,7 @@
             Build a segment representing a navigation property.
             </summary>
             <param name="navigationProperty">The navigation property this segment represents.</param>
-            <param name="entitySet">The set of the entities targetted by this navigation property. This can be null.</param>
+            <param name="entitySet">The set of the entities targeted by this navigation property. This can be null.</param>
             <exception cref="T:System.ArgumentNullException">Throws if the input navigationProperty is null.</exception>
         </member>
         <member name="M:Microsoft.Data.OData.Query.SemanticAst.NavigationPropertySegment.Translate``1(Microsoft.Data.OData.Query.SemanticAst.PathSegmentTranslator{``0})">
@@ -5637,7 +5637,7 @@
         </member>
         <member name="P:Microsoft.Data.OData.Query.SemanticAst.NavigationPropertySegment.EntitySet">
             <summary>
-            Gets the set of the entities targetted by this Navigation Property.
+            Gets the set of the entities targeted by this Navigation Property.
             This can be null.
             </summary>
         </member>
@@ -5852,7 +5852,7 @@
         <member name="F:Microsoft.Data.OData.Query.SemanticAst.SelectExpandClause.usedInternalLegacyConsturctor">
             <summary>
             Internal flag indicating that this clause was built using the legacy Selection and Expansion classes. In this case, we must 
-            call ComputeFinalSelectedItems() before handing out the object publically.
+            call ComputeFinalSelectedItems() before handing out the object publicly.
             </summary>
         </member>
         <member name="F:Microsoft.Data.OData.Query.SemanticAst.SelectExpandClause.selection">
@@ -5897,7 +5897,7 @@
         <member name="M:Microsoft.Data.OData.Query.SemanticAst.SelectExpandClause.SetAllSelectionRecursively">
             <summary>
             Switch to an AllSelection at this level and recursively at all levels below this one.
-            This is non-reversable because once everything is selected, selecting a specific property or other item is redundant.
+            This is non-reversible because once everything is selected, selecting a specific property or other item is redundant.
             </summary>
         </member>
         <member name="M:Microsoft.Data.OData.Query.SemanticAst.SelectExpandClause.InitializeEmptySelection">
@@ -5907,7 +5907,7 @@
         </member>
         <member name="M:Microsoft.Data.OData.Query.SemanticAst.SelectExpandClause.ComputeFinalSelectedItems">
             <summary>
-            Computes the list of SelectItems that will be publically availible to consumers.
+            Computes the list of SelectItems that will be publicly available to consumers.
             </summary>
         </member>
         <member name="P:Microsoft.Data.OData.Query.SemanticAst.SelectExpandClause.SelectedItems">
@@ -6317,7 +6317,7 @@
         </member>
         <member name="T:Microsoft.Data.OData.Query.SemanticAst.EntityRangeVariableReferenceNode">
             <summary>
-            Node to represent a range variable in an Any or All clause that referrs to an entity.
+            Node to represent a range variable in an Any or All clause that refers to an entity.
             </summary>
         </member>
         <member name="T:Microsoft.Data.OData.Query.SemanticAst.SingleEntityNode">
@@ -6532,12 +6532,12 @@
         </member>
         <member name="F:Microsoft.Data.OData.Query.SemanticAst.RangeVariableKind.Entity">
             <summary>
-            A range variable that referrs to entity types.
+            A range variable that refers to entity types.
             </summary>
         </member>
         <member name="F:Microsoft.Data.OData.Query.SemanticAst.RangeVariableKind.Nonentity">
             <summary>
-            A range variable that referrs to non-entity types.
+            A range variable that refers to non-entity types.
             </summary>
         </member>
         <member name="T:Microsoft.Data.OData.Query.SemanticAst.OperationSegment">
@@ -10334,7 +10334,7 @@
         </member>
         <member name="M:Microsoft.Data.OData.Query.ExpressionLexer.AdvanceToNextOccuranceOf(System.Char)">
             <summary>
-            Advance the pointer to the next occurance of the given value, swallowing all characters in between.
+            Advance the pointer to the next occurrence of the given value, swallowing all characters in between.
             </summary>
             <param name="endingValue">the ending delimiter.</param>
         </member>
@@ -10623,12 +10623,12 @@
         </member>
         <member name="F:Microsoft.Data.OData.Query.SemanticAst.KeyLookupNode.entitySet">
             <summary>
-            The EntitySet containing the collection this key referrs to.
+            The EntitySet containing the collection this key refers to.
             </summary>
         </member>
         <member name="F:Microsoft.Data.OData.Query.SemanticAst.KeyLookupNode.entityTypeReference">
             <summary>
-            The resouce type of the single value the key referrs to.
+            The resouce type of the single value the key refers to.
             </summary>
         </member>
         <member name="F:Microsoft.Data.OData.Query.SemanticAst.KeyLookupNode.keyPropertyValues">
@@ -10656,17 +10656,17 @@
         </member>
         <member name="P:Microsoft.Data.OData.Query.SemanticAst.KeyLookupNode.TypeReference">
             <summary>
-            Gets the resouce type of the single value that the key referrs to.
+            Gets the resouce type of the single value that the key refers to.
             </summary>
         </member>
         <member name="P:Microsoft.Data.OData.Query.SemanticAst.KeyLookupNode.EntityTypeReference">
             <summary>
-            Gets the resouce type of the single value that the key referrs to.
+            Gets the resouce type of the single value that the key refers to.
             </summary>
         </member>
         <member name="P:Microsoft.Data.OData.Query.SemanticAst.KeyLookupNode.EntitySet">
             <summary>
-            Gets the EntitySet that contains the collection this key referrs to.
+            Gets the EntitySet that contains the collection this key refers to.
             </summary>
         </member>
         <member name="P:Microsoft.Data.OData.Query.SemanticAst.KeyLookupNode.InternalKind">
@@ -16004,7 +16004,7 @@
             <param name="actualEntityType">The entity type of the entry.</param>
             <param name="selectedProperties">The selected properties of this scope.</param>
             <param name="isResponse">true if the entity metadata builder to create should be for a response payload; false for a request.</param>
-            <param name="keyAsSegment">true if keys should go in seperate segments in auto-generated URIs, false if they should go in parentheses.
+            <param name="keyAsSegment">true if keys should go in separate segments in auto-generated URIs, false if they should go in parentheses.
             A null value means the user hasn't specified a preference and we should look for an annotation in the entity container, if available.</param>
             <returns>The created metadata builder.</returns>
         </member>
@@ -16061,7 +16061,7 @@
             <param name="actualEntityType">The entity type of the entry.</param>
             <param name="selectedProperties">The selected properties of this scope.</param>
             <param name="isResponse">true if the entity metadata builder to create should be for a response payload; false for a request.</param>
-            <param name="keyAsSegment">true if keys should go in seperate segments in auto-generated URIs, false if they should go in parentheses.
+            <param name="keyAsSegment">true if keys should go in separate segments in auto-generated URIs, false if they should go in parentheses.
             A null value means the user hasn't specified a preference and we should look for an annotation in the entity container, if available.</param>
             <returns>The created metadata builder.</returns>
         </member>
@@ -16159,7 +16159,7 @@
             <param name="actualEntityType">The entity type of the entry.</param>
             <param name="selectedProperties">The selected properties of this scope.</param>
             <param name="isResponse">true if the entity metadata builder to create should be for a response payload; false for a request.</param>
-            <param name="keyAsSegment">true if keys should go in seperate segments in auto-generated URIs, false if they should go in parentheses.
+            <param name="keyAsSegment">true if keys should go in separate segments in auto-generated URIs, false if they should go in parentheses.
             A null value means the user hasn't specified a preference and we should look for an annotation in the entity container, if available.</param>
             <returns>The created metadata builder.</returns>
         </member>
@@ -16233,7 +16233,7 @@
             <param name="actualEntityType">The entity type of the entry.</param>
             <param name="selectedProperties">The selected properties of this scope.</param>
             <param name="isResponse">true if the entity metadata builder to create should be for a response payload; false for a request.</param>
-            <param name="keyAsSegment">true if keys should go in seperate segments in auto-generated URIs, false if they should go in parentheses.
+            <param name="keyAsSegment">true if keys should go in separate segments in auto-generated URIs, false if they should go in parentheses.
             A null value means the user hasn't specified a preference and we should look for an annotation in the entity container, if available.</param>
             <returns>The created metadata builder.</returns>
         </member>
@@ -19195,8 +19195,8 @@
         </member>
         <member name="F:Microsoft.Data.OData.JsonLight.ODataJsonLightSerializer.allowRelativeUri">
             <summary>
-            Set to true when odata.metadata is writen; set to false otherwise.
-            When value is false, all URIs writen to the payload must be absolute.
+            Set to true when odata.metadata is written; set to false otherwise.
+            When value is false, all URIs written to the payload must be absolute.
             </summary>
         </member>
         <member name="M:Microsoft.Data.OData.JsonLight.ODataJsonLightSerializer.#ctor(Microsoft.Data.OData.JsonLight.ODataJsonLightOutputContext)">
@@ -19820,7 +19820,7 @@
         </member>
         <member name="F:Microsoft.Data.OData.SimpleLazy`1.mutex">
             <summary>
-            For thread safty in creating the value.
+            For thread safety in creating the value.
             </summary>
         </member>
         <member name="F:Microsoft.Data.OData.SimpleLazy`1.factory">
@@ -22261,7 +22261,7 @@
             Stack of scopes.
             </summary>
             <remarks>
-            At the begining the Root scope is pushed to the stack and stays there for the entire parsing 
+            At the beginning the Root scope is pushed to the stack and stays there for the entire parsing 
               (so that we don't have to check for empty stack and also to track the number of root-level values)
             Each time a new object or array is started the Object or Array scope is pushed to the stack.
             If a property inside an Object is found, the Property scope is pushed to the stack.
@@ -22370,7 +22370,7 @@
             <remarks>
             Assumes that the current token position points to the opening quote.
             Note that the string parsing can never end with EndOfInput, since we're already seen the quote.
-            So it can either return a string succesfully or fail.</remarks>
+            So it can either return a string successfully or fail.</remarks>
         </member>
         <member name="M:Microsoft.Data.OData.Json.JsonReader.ParseStringPrimitiveValue(System.Boolean@)">
             <summary>
@@ -22382,7 +22382,7 @@
             <remarks>
             Assumes that the current token position points to the opening quote.
             Note that the string parsing can never end with EndOfInput, since we're already seen the quote.
-            So it can either return a string succesfully or fail.</remarks>
+            So it can either return a string successfully or fail.</remarks>
         </member>
         <member name="M:Microsoft.Data.OData.Json.JsonReader.ParseNullPrimitiveValue">
             <summary>
@@ -22517,7 +22517,7 @@
         </member>
         <member name="F:Microsoft.Data.OData.Json.JsonReader.ScopeType.Property">
             <summary>
-            Property scope - after the property name and colon and througout the value.
+            Property scope - after the property name and colon and throughout the value.
             </summary>
             <remarks>This scope is pushed when a property name and colon is found.
             The scope remains on the stack while the property value is parsed, but once the property value ends, it's immediately removed
@@ -22958,13 +22958,13 @@
             <summary>
             Adds the specified action to the current entry.
             </summary>
-            <param name="action">The action whcih is fully populated with the data from the payload.</param>
+            <param name="action">The action which is fully populated with the data from the payload.</param>
         </member>
         <member name="M:Microsoft.Data.OData.Json.IODataJsonOperationsDeserializerContext.AddFunctionToEntry(Microsoft.Data.OData.ODataFunction)">
             <summary>
             Adds the specified function to the current entry.
             </summary>
-            <param name="function">The function whcih is fully populated with the data from the payload.</param>
+            <param name="function">The function which is fully populated with the data from the payload.</param>
         </member>
         <member name="P:Microsoft.Data.OData.Json.IODataJsonOperationsDeserializerContext.JsonReader">
             <summary>
@@ -23103,8 +23103,8 @@
             This reader will buffer the entire object record whenever it finds the start of the object record.
             It then goes through all its properties and removes duplicates.
             It then reports the object record as if there were no duplicates in it.
-            If there was a duplicate property it will be reported at the position the first occurence of the property was found
-            but with the value of the last occurence.
+            If there was a duplicate property it will be reported at the position the first occurrence of the property was found
+            but with the value of the last occurrence.
             This is to implement WCF DS Server compatibility behavior.
             </remarks>
         </member>
@@ -24668,13 +24668,13 @@
             <summary>
             Adds the specified action to the current entry.
             </summary>
-            <param name="action">The action whcih is fully populated with the data from the payload.</param>
+            <param name="action">The action which is fully populated with the data from the payload.</param>
         </member>
         <member name="M:Microsoft.Data.OData.JsonLight.ODataJsonLightEntryAndFeedDeserializer.OperationsDeserializerContext.AddFunctionToEntry(Microsoft.Data.OData.ODataFunction)">
             <summary>
             Adds the specified function to the current entry.
             </summary>
-            <param name="function">The function whcih is fully populated with the data from the payload.</param>
+            <param name="function">The function which is fully populated with the data from the payload.</param>
         </member>
         <member name="P:Microsoft.Data.OData.JsonLight.ODataJsonLightEntryAndFeedDeserializer.OperationsDeserializerContext.JsonReader">
             <summary>
@@ -25015,7 +25015,7 @@
             <param name="error">The <see cref="T:Microsoft.Data.OData.ODataError"/> object to update with the data from this property value.</param>
             <param name="propertyName">The name of the property whose value is to be read.</param>
             <param name="duplicationPropertyNameChecker">DuplicatePropertyNamesChecker to use for extracting property annotations
-            targetting any custom instance annotations on the error.</param>
+            targeting any custom instance annotations on the error.</param>
             <remarks>
             Pre-Condition:  any                         - The value of the property being read.
             Post-Condition: JsonNodeType.Property       - The property after the one being read.
@@ -26174,7 +26174,7 @@
             </summary>
             <returns>true if more items can be read from the reader; otherwise false.</returns>
             <remarks>
-            Pre-Condition:  JsonNodeType.Property or JsonNodeType.EndObject:     assumes the last read puts the reader at the begining of the next parameter or at the end of the payload.
+            Pre-Condition:  JsonNodeType.Property or JsonNodeType.EndObject:     assumes the last read puts the reader at the beginning of the next parameter or at the end of the payload.
             Post-Condition: When the new state is Value, the reader is positioned at the closing '}' or at the name of the next parameter.
                             When the new state is Entry, the reader is positioned at the starting '{' of the entry payload.
                             When the new state is Feed or Collection, the reader is positioned at the starting '[' of the feed or collection payload.
@@ -26186,7 +26186,7 @@
             </summary>
             <returns>true if more items can be read from the reader; otherwise false.</returns>
             <remarks>
-            Pre-Condition:  JsonNodeType.Property or JsonNodeType.EndObject:     assumes the last read puts the reader at the begining of the next parameter or at the end of the payload.
+            Pre-Condition:  JsonNodeType.Property or JsonNodeType.EndObject:     assumes the last read puts the reader at the beginning of the next parameter or at the end of the payload.
             Post-Condition: When the new state is Value, the reader is positioned at the closing '}' or at the name of the next parameter.
                             When the new state is Entry, the reader is positioned at the starting '{' of the entry payload.
                             When the new state is Feed or Collection, the reader is positioned at the starting '[' of the feed or collection payload.
@@ -26234,7 +26234,7 @@
             </summary>
             <returns>true if more items can be read from the reader; otherwise false.</returns>
             <remarks>
-            Pre-Condition:  JsonNodeType.Property or JsonNodeType.EndObject:     assumes the last read puts the reader at the begining of the next parameter or at the end of the payload.
+            Pre-Condition:  JsonNodeType.Property or JsonNodeType.EndObject:     assumes the last read puts the reader at the beginning of the next parameter or at the end of the payload.
             Post-Condition: When the new state is Value, the reader is positioned at the closing '}' or at the name of the next parameter.
                             When the new state is Entry, the reader is positioned at the starting '{' of the entry payload.
                             When the new state is Feed or Collection, the reader is positioned at the starting '[' of the feed or collection payload.
@@ -26623,7 +26623,7 @@
             <summary>The writer has completed; nothing can be written anymore.</summary>
         </member>
         <member name="F:Microsoft.Data.OData.ODataParameterWriterCore.ParameterWriterState.Error">
-            <summary>An error had occured while writing the payload; nothing can be written anymore.</summary>
+            <summary>An error had occurred while writing the payload; nothing can be written anymore.</summary>
         </member>
         <member name="F:Microsoft.Data.OData.JsonLight.ODataJsonLightParameterWriter.jsonLightOutputContext">
             <summary>
@@ -27472,7 +27472,7 @@
                             other:                        Will throw with an appropriate message on any other node type encountered.
             Post-Condition: JsonNodeType.StartObject:     The beginning of the next resource collection in the array.
                             JsonNodeType.EndArray:        The end of the array.
-                            other:                        Any other node type occuring after the end object of the current resource collection. (Would be invalid).
+                            other:                        Any other node type occurring after the end object of the current resource collection. (Would be invalid).
             </remarks>
         </member>
         <member name="T:Microsoft.Data.OData.JsonLight.ODataJsonLightServiceDocumentSerializer">
@@ -27827,7 +27827,7 @@
         </member>
         <member name="M:Microsoft.Data.OData.ODataWriterCore.PrepareEntryForWriteStart(Microsoft.Data.OData.ODataEntry,Microsoft.Data.OData.ODataFeedAndEntryTypeContext,Microsoft.Data.OData.SelectedPropertiesNode)">
             <summary>
-            Place where derived writers can perform custom steps before the entry is writen, at the begining of WriteStartEntryImplementation.
+            Place where derived writers can perform custom steps before the entry is written, at the beginning of WriteStartEntryImplementation.
             </summary>
             <param name="entry">Entry to write.</param>
             <param name="typeContext">The context object to answer basic questions regarding the type of the entry or feed.</param>
@@ -28401,7 +28401,7 @@
         </member>
         <member name="M:Microsoft.Data.OData.JsonLight.ODataJsonLightWriter.PrepareEntryForWriteStart(Microsoft.Data.OData.ODataEntry,Microsoft.Data.OData.ODataFeedAndEntryTypeContext,Microsoft.Data.OData.SelectedPropertiesNode)">
             <summary>
-            Place where derived writers can perform custom steps before the entry is writen, at the begining of WriteStartEntryImplementation.
+            Place where derived writers can perform custom steps before the entry is written, at the beginning of WriteStartEntryImplementation.
             </summary>
             <param name="entry">Entry to write.</param>
             <param name="typeContext">The context object to answer basic questions regarding the type of the entry or feed.</param>
@@ -32498,7 +32498,7 @@
             </summary>
             <returns>true if more items can be read from the reader; otherwise false.</returns>
             <remarks>
-            Pre-Condition:  JsonNodeType.Property or JsonNodeType.EndObject:     assumes the last read puts the reader at the begining of the next parameter or at the end of the payload.
+            Pre-Condition:  JsonNodeType.Property or JsonNodeType.EndObject:     assumes the last read puts the reader at the beginning of the next parameter or at the end of the payload.
             Post-Condition: When the new state is Value, the reader is positioned at the closing '}' or at the name of the next parameter.
                             When the new state is Entry, the reader is positioned at the starting '{' of the entry payload.
                             When the new state is Feed or Collection, the reader is positioned at the starting '[' of the feed or collection payload.
@@ -33254,7 +33254,7 @@
             <summary>Custom type resolver used by the WCF DS Client.</summary>
             <remarks>
             This function is used instead of calling the IEdmModel.FindType.
-            The first parameter to the function is the expected type (the type infered from the parent property or specified by the external caller).
+            The first parameter to the function is the expected type (the type inferred from the parent property or specified by the external caller).
             The second parameter is the type name from the payload.
             The function should return the resolved type, or null if no such type was found.
             </remarks>
@@ -33293,7 +33293,7 @@
             <param name="usesV1Provider">true if the server uses a V1 provider; otherwise false.</param>
             <param name="typeResolver">Custom type resolver which takes both expected type and type name.
             This function is used instead of the IEdmModel.FindType is it's specified.
-            The first parameter to the function is the expected type (the type infered from the parent property or specified by the external caller).
+            The first parameter to the function is the expected type (the type inferred from the parent property or specified by the external caller).
             The second parameter is the type name from the payload.
             The function should return the resolved type, or null if no such type was found.</param>
             <param name="odataNamespace">Custom data namespace.</param>
@@ -33305,7 +33305,7 @@
             </summary>
             <param name="typeResolver">Custom type resolver which takes both expected type and type name.
             This function is used instead of the IEdmModel.FindType is it's specified.
-            The first parameter to the function is the expected type (the type infered from the parent property or specified by the external caller).
+            The first parameter to the function is the expected type (the type inferred from the parent property or specified by the external caller).
             The second parameter is the type name from the payload.
             The function should return the resolved type, or null if no such type was found.</param>
             <param name="odataNamespace">Custom data namespace.</param>
@@ -36807,7 +36807,7 @@
             <param name="entryState">The reader entry state for the entry being read.</param>
             <param name="linkRelation">The rel attribute value for the link, unescaped parsed URI.</param>
             <param name="linkHRef">The href attribute value for the link (or null if the href attribute was not present).</param>
-            <returns>true, if the association link was read succesfully, false otherwise.</returns>
+            <returns>true, if the association link was read successfully, false otherwise.</returns>
             <remarks>
             Pre-Condition:   XmlNodeType.Element atom:link  - The atom:link element to read.
             Post-Condition:  Any                            - The node after the atom:link element if the link was read by this method.
@@ -36819,7 +36819,7 @@
             Reads a an m:action or m:function in atom:entry.
             </summary>
             <param name="entryState">The reader entry state for the entry being read.</param>
-            <returns>true, if the m:action or m:function was read succesfully, false otherwise.</returns>
+            <returns>true, if the m:action or m:function was read successfully, false otherwise.</returns>
             <remarks>
             Pre-Condition:   XmlNodeType.Element m:action|m:function - The m:action or m:function element to read.
             Post-Condition:  Any                                     - The node after the m:action or m:function element if it was read by this method.
@@ -37039,9 +37039,9 @@
             <summary>
             Determines if we should read an element which is allowed to appear only once in ATOM.
             </summary>
-            <param name="alreadyExists">true if we already found such element before; false if this is the first occurence.</param>
+            <param name="alreadyExists">true if we already found such element before; false if this is the first occurrence.</param>
             <returns>true if the element should be processed; false if the element should be skipped.</returns>
-            <remarks>The method may throw if multiple occurences of such element occure and they should be treated as an error.</remarks>
+            <remarks>The method may throw if multiple occurrences of such element occure and they should be treated as an error.</remarks>
         </member>
         <member name="P:Microsoft.Data.OData.Atom.ODataAtomEntryMetadataDeserializer.SourceMetadataDeserializer">
             <summary>
@@ -38522,7 +38522,7 @@
             Post-Condition:  Any                   - the node after the element.
                              
             This method is similar to ReadElementContentAsString with one difference:
-            - It ignores Whitespace nodes - this is needed for compatiblity, WCF DS ignores insignificant whitespaces
+            - It ignores Whitespace nodes - this is needed for compatibility, WCF DS ignores insignificant whitespaces
                 it does that by setting the IgnoreWhitespace option on reader settings, ODataLib can't do that
                 cause it doesn't always control the creation of the XmlReader, so it has to explicitely ignore
                 insignificant whitespaces.
@@ -38552,7 +38552,7 @@
                              XmlNodeType.EndElement - the element had some value.
                              
             This method is similar to ReadElementContentAsString with two differences:
-            - It ignores Whitespace nodes - this is needed for compatiblity, WCF DS ignores insignificant whitespaces
+            - It ignores Whitespace nodes - this is needed for compatibility, WCF DS ignores insignificant whitespaces
                 it does that by setting the IgnoreWhitespace option on reader settings, ODataLib can't do that
                 cause it doesn't always control the creation of the XmlReader, so it has to explicitely ignore
                 insignificant whitespaces.
@@ -39442,13 +39442,13 @@
             <summary>
             Adds the specified action to the current entry.
             </summary>
-            <param name="action">The action whcih is fully populated with the data from the payload.</param>
+            <param name="action">The action which is fully populated with the data from the payload.</param>
         </member>
         <member name="M:Microsoft.Data.OData.VerboseJson.ODataVerboseJsonEntryAndFeedDeserializer.OperationsDeserializerContext.AddFunctionToEntry(Microsoft.Data.OData.ODataFunction)">
             <summary>
             Adds the specified function to the current entry.
             </summary>
-            <param name="function">The function whcih is fully populated with the data from the payload.</param>
+            <param name="function">The function which is fully populated with the data from the payload.</param>
         </member>
         <member name="P:Microsoft.Data.OData.VerboseJson.ODataVerboseJsonEntryAndFeedDeserializer.OperationsDeserializerContext.JsonReader">
             <summary>
@@ -40631,7 +40631,7 @@
             Determines if the expect value type and the current settings mandate us to validate type kinds of payload values.
             </summary>
             <param name="messageReaderSettings">The message reader settings.</param>
-            <param name="expectedValueTypeReference">The expected type reference for the value infered from the model.</param>
+            <param name="expectedValueTypeReference">The expected type reference for the value inferred from the model.</param>
             <param name="payloadTypeKind">The type kind of the payload value.</param>
             <returns>true if the payload value kind must be verified, false otherwise.</returns>
             <remarks>This method deals with the strict versus lax behavior, as well as with the behavior when primitive type conversion is disabled.</remarks>
@@ -41144,7 +41144,7 @@
             <summary>The input context to read the content from.</summary>
         </member>
         <member name="F:Microsoft.Data.OData.ODataBatchReader.batchStream">
-            <summary>The batch stream used by the batch reader to devide a batch payload into parts.</summary>
+            <summary>The batch stream used by the batch reader to divide a batch payload into parts.</summary>
         </member>
         <member name="F:Microsoft.Data.OData.ODataBatchReader.synchronous">
             <summary>True if the writer was created for synchronous operation; false for asynchronous.</summary>
@@ -42549,7 +42549,7 @@
         </member>
         <member name="M:Microsoft.Data.OData.BufferedReadStream.ResetForReading">
             <summary>
-            Resets the stream to the begining and prepares it for reading.
+            Resets the stream to the beginning and prepares it for reading.
             </summary>
         </member>
         <member name="M:Microsoft.Data.OData.BufferedReadStream.Dispose(System.Boolean)">
@@ -45512,7 +45512,7 @@
             <summary>The email of the person.</summary>
         </member>
         <member name="F:Microsoft.Data.OData.Atom.AtomPersonMetadata.uriFromEpm">
-            <summary>The URI value comming from EPM.</summary>
+            <summary>The URI value coming from EPM.</summary>
             <remarks>In WCF DS when mapping a property through EPM to person/uri element we convert the value of the property to string
             and then set the syndication APIs Uri property which is also of type string. Syndication API doesn't do any validation on the value
             and just writes it out. So it's risky to try to convert the string to a Uri instance due to the unknown validation the Uri class
@@ -45543,7 +45543,7 @@
             <returns>An email address associated with the person.</returns>
         </member>
         <member name="P:Microsoft.Data.OData.Atom.AtomPersonMetadata.UriFromEpm">
-            <summary>The URI value comming from EPM.</summary>
+            <summary>The URI value coming from EPM.</summary>
             <remarks>In WCF DS when mapping a property through EPM to person/uri element we convert the value of the property to string
             and then set the syndication APIs Uri property which is also of type string. Syndication API doesn't do any validation on the value
             and just writes it out. So it's risky to try to convert the string to a Uri instance due to the unknown validation the Uri class
@@ -46484,7 +46484,7 @@
         </member>
         <member name="M:Microsoft.Data.OData.HttpUtils.CompareMediaTypeNames(System.String,System.String)">
             <summary>
-            Does an ordinal ignore case comparision of the given media type names.
+            Does an ordinal ignore case comparison of the given media type names.
             </summary>
             <param name="mediaTypeName1">First media type name.</param>
             <param name="mediaTypeName2">Second media type name.</param>
@@ -46492,7 +46492,7 @@
         </member>
         <member name="M:Microsoft.Data.OData.HttpUtils.CompareMediaTypeParameterNames(System.String,System.String)">
             <summary>
-            Does an ordinal ignore case comparision of the given MIME type parameter name.
+            Does an ordinal ignore case comparison of the given MIME type parameter name.
             </summary>
             <param name="parameterName1">First parameter name.</param>
             <param name="parameterName2">Second parameter name.</param>
@@ -48005,8 +48005,8 @@
         </member>
         <member name="F:Microsoft.Data.OData.ODataMessageWriterSettings.shouldIncludeAnnotation">
             <summary>
-            Func to evaluate whether an annotation should be writen by the writer. The func should return true if the annotation should
-            be writen and false if the annotation should be skipped.
+            Func to evaluate whether an annotation should be written by the writer. The func should return true if the annotation should
+            be written and false if the annotation should be skipped.
             </summary>
         </member>
         <member name="F:Microsoft.Data.OData.ODataMessageWriterSettings.alwaysUseDefaultXmlNamespaceForRootElement">
@@ -48116,10 +48116,10 @@
         </member>
         <member name="M:Microsoft.Data.OData.ODataMessageWriterSettings.ShouldSkipAnnotation(System.String)">
             <summary>
-            Returns true to indicate that the annotation with the name <paramref name="annotationName"/> should not be writen, false otherwise.
+            Returns true to indicate that the annotation with the name <paramref name="annotationName"/> should not be written, false otherwise.
             </summary>
             <param name="annotationName">The name of the annotation in question.</param>
-            <returns>Returns true to indicate that the annotation with the name <paramref name="annotationName"/> should not be writen, false otherwise.</returns>
+            <returns>Returns true to indicate that the annotation with the name <paramref name="annotationName"/> should not be written, false otherwise.</returns>
         </member>
         <member name="P:Microsoft.Data.OData.ODataMessageWriterSettings.Version">
             <summary>Gets or sets the OData protocol version to be used for writing payloads. </summary>
@@ -48225,8 +48225,8 @@
         </member>
         <member name="P:Microsoft.Data.OData.ODataMessageWriterSettings.ShouldIncludeAnnotation">
             <summary>
-            Func to evaluate whether an annotation should be writen by the writer. The func should return true if the annotation should
-            be writen and false if the annotation should be skipped.
+            Func to evaluate whether an annotation should be written by the writer. The func should return true if the annotation should
+            be written and false if the annotation should be skipped.
             </summary>
         </member>
         <member name="T:Microsoft.Data.OData.MimeConstants">
@@ -48790,7 +48790,7 @@
             Writes the collection of <see cref="T:Microsoft.Data.OData.ODataInstanceAnnotation"/> to the ATOM payload.
             </summary>
             <param name="instanceAnnotations">The collection of <see cref="T:Microsoft.Data.OData.ODataInstanceAnnotation"/> to write.</param>
-            <param name="tracker">Helper class to track if an annotation has been writen.</param>
+            <param name="tracker">Helper class to track if an annotation has been written.</param>
         </member>
         <member name="M:Microsoft.Data.OData.Atom.ODataAtomWriter.WriteFeedInstanceAnnotations(Microsoft.Data.OData.ODataFeed,Microsoft.Data.OData.Atom.ODataAtomWriter.AtomFeedScope)">
             <summary>
@@ -49515,7 +49515,7 @@
         </member>
         <member name="P:Microsoft.Data.OData.Json.JsonWriter.Scope.EndString">
             <summary>
-            What to write at teh end of this scope.
+            What to write at the end of this scope.
             </summary>
         </member>
         <member name="P:Microsoft.Data.OData.Json.JsonWriter.Scope.ObjectCount">
@@ -55001,7 +55001,7 @@
         </member>
         <member name="P:Microsoft.Data.OData.Strings.ODataFeedAndEntryTypeContext_MetadataOrSerializationInfoMissing">
             <summary>
-            A string like "When writing a JSON response, a user model must be specified and the entity set and entity type must be passed to the ODataMessageWriter.CreateEntryWriter method or the ODataFeedAndEntrySerializationInfo must be set on the ODataEntry or ODataFeed that is being writen."
+            A string like "When writing a JSON response, a user model must be specified and the entity set and entity type must be passed to the ODataMessageWriter.CreateEntryWriter method or the ODataFeedAndEntrySerializationInfo must be set on the ODataEntry or ODataFeed that is being written."
             </summary>
         </member>
         <member name="P:Microsoft.Data.OData.Strings.ODataFeedAndEntryTypeContext_ODataEntryTypeNameMissing">
